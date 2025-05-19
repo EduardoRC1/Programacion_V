@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #30f20d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #0833f3;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #ee0f2a;
+            color: white;
+            border: none;
+            cursor: crosshair;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+    <form method="POST" action="calcular.php">
+        <label>Primer Numero</label>
+        <input type="text" name="Numero1"><br>
+
+        <label>Segundo Numero</label>
+        <input type="text" name="Numero2"><br>
+        
+    <select name="calcular" id="calcular">
+    <option value="Suma">Suma</option>
+    <option value="Resta">Resta</option>
+    <option value="Multiplicar">Multiplicar</option>
+    <option value="Division">Division</option>
+    </select><br>
+
+    <button type="submit">Calcular</button>
+
+    </form>
+</body>
+</html>
