@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Cinepolis</title>
+</head>
+<body background="cinema.jpeg"> <!-- imagen de background -->
+
+    <!-- El CSS que contiene la tabla de los datos de usuario-->
+    <style> 
+        table {
+            border-collapse: collapse;
+            margin: 10px 0;
+            width: 300px;
+        }
+
+         body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('cinema.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ee0505;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            background-color: rgba(38, 8, 234, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+            color: #ffbf00ed;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ffd700;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #000;
+            font-size: 16px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #000;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+            accent-color: #ffd700;
+        }
+
+        button {
+            background-color: #ffd700;
+            color: #000;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffc800;
+            transform: scale(1.02);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffd700;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+        }
+
+        .price-table {
+            margin: 25px 0;
+        }
+
+        .student-discount {
+            margin: 15px 0;
+            color: #ffd700;
+        }
+    </style>
+    <!-- El form utilizando el metodo POST para llamar la pagina de pagos en PHP-->
+     <!--Lo que contiene incluye el Nombre Apellido la edad y te deja eligir entre 4 tipos de funciones-->
+    <form method="POST" action="payment.php">
+        <h1>Discount Cinepolis</h1>
+        <label>First Name</label>
+        <input type="text" name="FirstName"><br>
+
+        <label>Last Name</label>
+        <input type="text" name="LastName"><br>
+
+        <label>Age</label>
+        <input type="text" name="Age"><br><br>
+
+        <select name="TipoDeFuncion" id="Funcion">
+        <option value="Funcion2D">Funcion 2D</option>
+        <option value="Funcion3D">Funcion 3D</option>
+        <option value="FuncionIMAX">Funcion IMAX</option>
+        <option value="SalaVIP">Sala VIP</option>
+        </select>
+        <br>
+        
+        <!--La tabla de precios para que el usuario tenga una idea de lo que va pagar, que no se me hace ideal porque sabiendo el precio el usuario podra elegir cualquier edad. Regresaremos a hacer ajustes-->
+
+           <table>
+            <tr>
+                <th>FUNCION</th>
+                <th>PRECIO BASE</th>
+            </tr>
+            <tr>
+                <td>Función 2D</td>
+                <td>40 MXN</td>
+            </tr>
+            <tr>
+                <td>Función 3D</td>
+                <td>60 MXN</td>
+            </tr>
+            <tr>
+                <td>Función IMAX</td>
+                <td>85 MXN</td>
+            </tr>
+            <tr>
+                <td>Sala VIP</td>
+                <td>105 MXN</td>
+            </tr>
+        </table>
+
+        <!--El checkbox para que el usuario eliga el descuento de Estudiante, otra ves tendra que ver mas adelante una implementacion para verificar que si es estudiante por que siendo asi cualquier puede ser-->
+
+        <label>
+        <input type="checkbox" name="checkbox"> Soy Estudiante con Credencial Vigente
+        </label><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
