@@ -1,0 +1,72 @@
+body{
+    font-family:  monospace,Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    background-color: rgb(131, 71, 34);
+    color: white;
+
+
+}
+/*Text Align*/
+#left{
+    text-align: left;
+
+}
+#right{
+    text-align: right;
+}
+#center{
+    text-align: center;
+}
+#justify{
+    text-align: justify;
+}
+/*Propiedad text-indent*/
+#texto-con-sangria{
+    text-indent: 4%;
+    color: rgb(45, 214, 226);
+    cursor: pointer;
+}
+/*Propiedad text-decorationb*/
+#underline{
+    text-decoration:underline wavy;
+}
+#overline{
+    text-decoration: overline wavy;
+}
+#line-through{
+    text-decoration: line-through wavy red;
+}
+/*Propiedades text-transform*/
+#capitalize{
+    text-transform: capitalize;
+}
+#uppercase{
+    text-transform: uppercase;
+}
+#lowercase{
+    text-transform: lowercase;
+}
+/*Pripiedades line-height*/
+#interlineado{
+    line-height: 2cm;
+}
+#interlineado2{
+    line-height: 1cm;
+}
+/*Propiedades text-shadow*/
+/*Se utiliza para agrupar una sombra a los textos, Sombra H: Posicion horizontal 
+de la sombra(Positivo: derecha, negativo, izquierda).
+Sombra v: Posicion vertical de la sombra, positivo: abajo, negativo, arriba).
+Difuminado: Efecto de desenfoque.
+Color: Color de la sombra
+*/ 
+#sombra{
+    text-shadow: 8px 4px 4px black;
+    font-size: 3rem;
+}
+#multiple{
+    text-shadow: 0px 4px 0px black,
+                 3px 4px 3px red,
+                 5px 4px 5px blue ;
+    font-size: 3rem;
+}
