@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario</title>
+</head>
+<body>
+    <form method="POST" action="resultado.php">
+    <label>Empleado: </label>
+    <input type="text" name="Empleado"><br><br>
+    <label>Horas: </label>
+    <input type="text" name="Horas"><br><br>
+
+    <!--El select para eligir la opcion de puesto-->
+    <label>Puesto:</label>
+    <select name="Puesto" id="Puesto">
+    <option></option>
+    <option value="Jefe">Jefe $450</option>
+    <option value="Administrativo">Administrativo $350</option>
+    <option value="Operador">Operador $250</option>
+    <option value="Practicante">Practicante $150</option>
+    </select><br><br>
+    
+    <button type="submit">Submit</button><br>
+    </form>
+</body>
+</html>
