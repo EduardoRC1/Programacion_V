@@ -1,0 +1,19 @@
+
+div{
+    width: 220px;
+    height: 250px;
+    background-color: blue;
+}
+
+#modeloCaja{
+    padding-left: 100px;
+    padding-top: 0px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+    border: 10px solid black;
+   
+}
+
+*{
+    margin: 100px;
+}
