@@ -1,0 +1,8 @@
+/*Aqui ira el CSS de todo el sitio*/
+
+/*Estilos para el pie de página en el Homepage*/
+#footer {
+    position: absolute;
+    bottom: 30px;
+    width: 90%;
+}
